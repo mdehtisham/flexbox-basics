@@ -16,21 +16,31 @@ body{
     /* justify-content: center; */
     /* Always is on the cross axis */
     /* align-items: center; */
-    flex-direction: column;
+    /* flex-direction: row; */
 
     /* If item can't fit in single line it will put it in the next line */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .item{
-    width: 100px;
+    /* width: 100px; */
+    /* flex-basis: 100px; */
     height: 100px;
     background-color: #254de4;
+    padding: 10px;
+   border-radius: 5px;
     color: #fff;
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* if you want to make all item same size */
+    /* flex-grow: 1; */
+}
+.item:nth-of-type(1){
+   padding: 10px;
+   border-radius: 5px;
 }
 /* It can be use to align individual items
 .item:nth-of-type(3){
@@ -42,8 +52,10 @@ body{
 .item:nth-of-type(1){
     align-self: flex-start;
 } */
+
+
 /* It can be use to align individual items */
-.item:nth-of-type(3){
+/* .item:nth-of-type(3){
     order: 2;
 }
 .item:nth-of-type(2){
@@ -51,4 +63,15 @@ body{
 }
 .item:nth-of-type(1){
     order: 3;
+} */
+
+/* It can be use to align individual items */
+ /* .item:nth-of-type(1){
+    flex-grow: 2;
 }
+.item:nth-of-type(2){
+    flex-grow: 0;
+}
+.item:nth-of-type(3){
+    flex-grow: 2;
+}  */

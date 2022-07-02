@@ -12,8 +12,14 @@ body{
     height: 500px;
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    /* Always is on the main axis */
+    /* justify-content: center; */
+    /* Always is on the cross axis */
+    /* align-items: center; */
+    flex-direction: column;
+
+    /* If item can't fit in single line it will put it in the next line */
+    flex-wrap: wrap;
 }
 
 .item{
